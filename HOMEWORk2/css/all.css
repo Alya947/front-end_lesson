@@ -1,0 +1,57 @@
+.body {}
+
+.header_block {
+    width: 70%;
+    height: 100px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: #eef2f4;
+}
+
+.header_block h1 {
+    float: left;
+    padding-top: 25px;
+    margin-left: 50px;
+}
+
+.nav_block {
+    padding: 25px 150px 0px 0px;
+}
+
+.nav_block ul {
+    float: right;
+}
+
+.nav_block li {
+    display: inline;
+    padding: 30px 0px 0px 75px;
+}
+
+.main_block {
+    background: url(../img/bkground.webp) no-repeat;
+    width: 60%;
+    height: 800px;
+    margin: auto;
+}
+
+.main_content {
+    margin-top: 30px;
+    display: table-row;
+}
+
+.main_content_item {
+    float: left;
+    padding-left: 100px;
+}
+
+.main_content_item img {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.main_content_item {
+    margin-top: 30px;
+    display: table;
+}
+
+.footer {}
