@@ -3,13 +3,14 @@
     margin: 0;
 }
 
-:root {
+ :root {
     --main-font: 'Open Sans', sans-serif;
     --main-title: #070707;
 }
 
 body {
     font-family: var(--main-font);
+    color: var(--main-title);
 }
 
 .container {
@@ -30,6 +31,7 @@ body {
     padding: 29px 0;
     margin-bottom: 33px;
     border-bottom: 1px solid #828282;
+    box-shadow: 0 10px 4px -6px rgb(0 0 0 / 10%);
 }
 
 .header__menu-container {
@@ -39,12 +41,21 @@ body {
 }
 
 .header__menu-title {
+    transition-property: font-size;
+    transition-duration: 2s;
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
-    color: var(--main-title);
+    color: #828282;
     text-decoration: none;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.header__menu-title:hover {
+    color: var(--main-title);
+    transition-property: font-size;
+    transition-duration: 2s;
+    font-size: 22px;
 }
 
 .header__title {
@@ -63,9 +74,19 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 100px;
+    transition-property: width;
+    transition-duration: 2s;
+}
+
+.header__img:hover {
+    width: 800px;
+    transition-property: width;
+    transition-duration: 2s;
 }
 
 .main__about-me {
+    transition-property: background-color;
+    transition-duration: 2s;
     margin: 0 auto;
     margin-bottom: 100px;
     width: 1445px;
@@ -73,14 +94,23 @@ body {
     background-color: #F6F6F6;
 }
 
+.main__about-me:hover {
+    transition-property: background-color;
+    background-color: bisque;
+    transition-duration: 2s;
+}
+
 .main__about_me-resume {
     margin: 0 auto;
     width: 480px;
     height: 246px;
+    padding-top: 80px;
 }
 
-.main__about_me-title {
-    padding-top: 100px;
+.main__about_me-title,
+.main__skills_sub-title,
+.main__portfolio_sub-title,
+.contacts__title {
     text-align: center;
     font-weight: 700;
     font-size: 34px;
@@ -89,7 +119,11 @@ body {
     color: var(--main-title);
 }
 
-.main__about_me-paragraph {
+.main__about_me-title:hover {
+    transform: scale(1.2);
+}
+
+.main__about_me-text {
     padding-top: 40px;
     text-align: center;
     font-weight: 400;
@@ -99,24 +133,34 @@ body {
     color: var(--main-title);
 }
 
+.main__about_me-paragraph {
+    margin-top: 25px;
+}
+
+.main__about_me-paragraph:first-child:hover {
+    color: #6e0606;
+    transform: translate(50px);
+}
+
+.main__about_me-paragraph:nth-child(2):hover {
+    color: rgb(80, 4, 4);
+    transform: scale(1.2);
+}
+
+.main__about_me-paragraph:last-child:hover {
+    color: rgb(82, 3, 78);
+    transform: skew(20deg);
+}
+
 .main__skills {
     margin: auto;
     width: 1445px;
-    height: 1097px;
-    background-color: #FFFFFF;
+    height: 470px;
 }
 
 .main__skills-package {
     width: 936px;
     height: 396px;
-}
-
-.main__skills-title {
-    text-align: center;
-    font-weight: 700;
-    font-size: 34px;
-    line-height: 46px;
-    color: var(--main-title);
 }
 
 .main__skills-programs {
@@ -126,4 +170,125 @@ body {
     line-height: 25px;
     text-align: center;
     padding-top: 30px;
+    margin-bottom: 80px;
+}
+
+.main__skills-items {
+    padding-left: 130px;
+}
+
+.main__skills-img {
+    width: 167px;
+    height: 224px;
+    padding-left: 100px;
+}
+
+.main__portfolio-container {
+    margin-top: 80px;
+    margin: 0px auto;
+    width: 1445px;
+    background-color: #F6F6F6;
+}
+
+.main__portfolio-item {
+    padding-left: 255px;
+}
+
+.main__portfolio_sub-title {
+    padding-right: 250px;
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+
+.main__portfolio img {
+    width: 936px;
+}
+
+.main__portfolio-inscription,
+.main__porfolio_reebook-docket,
+.main__portfolio_braun-docket {
+    display: block;
+    padding-top: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    padding-right: 220px;
+    padding-bottom: 80px;
+}
+
+.main__portfolio-inscription span {
+    display: block;
+}
+
+.main__portfolio-inscription a {
+    color: var(--main-title);
+}
+
+.main__porfolio_reebook-docket a {
+    color: var(--main-title);
+}
+
+.main__portfolio_braun-docket a {
+    color: var(--main-title);
+}
+
+.contacts {
+    background-color: #FFFFFF;
+}
+
+.contacts__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.contacts__title {
+    padding-bottom: 15px;
+    padding-top: 80px;
+}
+
+.contacts__text span {
+    display: block;
+    padding-bottom: 50px;
+}
+
+.contact__button {
+    padding-left: 860px;
+    padding-bottom: 20px;
+}
+
+.contact__button button {
+    background-color: #070707;
+    width: 180px;
+    height: 55px;
+    border-radius: 40px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
+.contacts__icons {
+    padding-left: 815px;
+    padding-bottom: 20px;
+}
+
+.contacts__icons-img {
+    padding-left: 30px;
+}
+
+.contacts__social-media p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #828282;
+}
+
+.contacts__social-media span {
+    display: block;
 }
