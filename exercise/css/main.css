@@ -1,0 +1,37 @@
+.page--wrapper {
+    width: 100%;
+    min-height: 823px;
+    margin: auto;
+    background-color: #C4C4C4;
+}
+
+.box__wrapper {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.box__1,
+.box__3 {
+    width: 1162px;
+    height: 162px;
+    background-color: #DC3F3F;
+    margin: auto;
+}
+
+.box__2 {
+    gap: 80px;
+    display: flex;
+    margin: auto;
+    width: 1162px;
+    height: 162px;
+    background-color: #DC3F3F;
+}
+
+.box__item {
+    margin-left: 100px;
+    height: 162px;
+    background-color: #412A2A;
+    width: 200px;
+}
