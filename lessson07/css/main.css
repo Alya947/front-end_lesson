@@ -1,0 +1,19 @@
+.skills {
+    padding: 100px 0 80px;
+}
+
+.skills__title {
+    margin-bottom: 23px;
+}
+
+.skills__text {
+    margin-bottom: 78px;
+}
+
+.skills__sub-title {
+    font-family: 'Gilroy-Bold';
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #828282;
+}
