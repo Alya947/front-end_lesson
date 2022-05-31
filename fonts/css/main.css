@@ -1,0 +1,45 @@
+                  /*font-family: 'Farro', sans-serif;
+font-family: 'Francois One', sans-serif;
+font-family: 'PT Sans', sans-serif;*/
+                  
+                  * {
+                      padding: 0;
+                      margin: 0;
+                      box-sizing: border-box;
+                  }
+                  
+                  .wrapper {
+                      max-width: 1080px;
+                      width: 100%;
+                      min-width: 320px;
+                      margin: auto;
+                  }
+                  
+                  .header {
+                      display: flex;
+                      justify-content: space-around;
+                  }
+                  
+                  .header p {
+                      display: inline;
+                  }
+                  
+                  .header p:first-of-type {
+                      margin-right: 15px;
+                  }
+                  
+                  .paper {
+                      margin: auto;
+                      margin-top: 60px;
+                  }
+                  
+                  .paper__intro h2 {
+                      font-weight: 400;
+                      font-size: 36px;
+                      line-height: 48px;
+                      letter-spacing: 0.04em;
+                      text-transform: uppercase;
+                      color: #000000;
+                  }
+                  
+                  .paper__intro p {}

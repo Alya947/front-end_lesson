@@ -1,0 +1,192 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .container {
+        max-width: 1250px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .header {
+        position: fixed;
+        margin-top: 28px;
+    }
+    
+    .header p {
+        display: inline;
+        font-family: 'Tourney';
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 18px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #000000;
+    }
+    
+    .header p:nth-child(2) {
+        padding-left: 20px;
+        font-family: 'Staatliches';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 28px;
+        letter-spacing: 0.03em;
+        color: #000000;
+    }
+    
+    .header a {
+        text-decoration: none;
+        color: #000000;
+    }
+    
+    .header a:hover {
+        color: gray;
+    }
+    
+    .header img {
+        max-width: 239px;
+        left: 130%;
+        position: relative;
+        top: 1%;
+    }
+    
+    .sidenav {
+        position: fixed;
+        top: 15%;
+        width: 20%;
+    }
+    
+    .sidenav__list li {
+        list-style: none;
+        padding-top: 60px;
+        border-bottom: 1px solid #BDBDBD;
+    }
+    
+    .sidenav__list a {
+        text-decoration: none;
+        font-family: 'Francois One';
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 48px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #000000;
+    }
+    
+    .sidenav__list a:hover {
+        color: gray;
+    }
+    
+    .main {
+        z-index: 2;
+    }
+    
+    .main img {
+        max-width: 560px;
+        position: fixed;
+        z-index: 0;
+        right: 10%;
+        top: 15%;
+    }
+    
+    .intro,
+    .core,
+    .react,
+    .input {
+        width: 785px;
+        position: absolute;
+        left: 50%;
+    }
+    
+    .intro {
+        top: 23%;
+    }
+    
+    .intro__title,
+    .core__title,
+    .react__title,
+    .input__title {
+        padding-bottom: 50px;
+        font-family: 'Francois One';
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 48px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #000000;
+    }
+    
+    .intro__title::before,
+    .core__title::before,
+    .react__title::before,
+    .input__title::before {
+        content: "";
+        background-image: url(../img/divider.png);
+        position: absolute;
+        top: -30px;
+        left: 0;
+        width: 100px;
+        height: 8px;
+    }
+    
+    .intro__title sup,
+    .core sup,
+    .react__title sup,
+    .input__title sup {
+        font-family: 'Farro';
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 15px;
+        letter-spacing: 0.04em;
+        color: #000000;
+    }
+    
+    .intro__par,
+    .core__par,
+    .react__par,
+    .input__par {
+        font-family: 'PT Sans';
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 48px;
+        color: #000000;
+    }
+    
+    .intro a {
+        color: #000000;
+    }
+    
+    .intro a:hover {
+        color: gray;
+    }
+    
+    .core {
+        top: 65%;
+    }
+    
+    .react {
+        top: 130%;
+    }
+    
+    .react__par {
+        padding-bottom: 30px;
+    }
+    
+    .react__par mark {
+        background-color: #BDBDBD;
+    }
+    
+    .react__par a {
+        color: #000000;
+    }
+    
+    .react__par a:hover {
+        color: gray;
+    }
+    
+    .input {
+        top: 280%;
+    }
