@@ -53,13 +53,23 @@
         top: 1%;
     }
     
-    .sidenav {
-        position: fixed;
-        top: 15%;
-        width: 20%;
+    .content-wrapper {
+        display: flex;
+        justify-content: space-between;
     }
     
-    .sidenav__list li {
+    .sidenav {
+        overflow: visible;
+        position: relative;
+    }
+    
+    .sidenav__menu {
+        position: sticky;
+        height: 432px;
+        top: 60px;
+    }
+    
+    .sidenav__link {
         list-style: none;
         padding-top: 60px;
         border-bottom: 1px solid #BDBDBD;
@@ -81,13 +91,14 @@
     }
     
     .main {
-        z-index: 2;
+        max-width: 785px;
+        padding-left: 120px;
     }
     
     .main img {
         max-width: 560px;
         position: fixed;
-        z-index: 0;
+        z-index: -1;
         right: 10%;
         top: 15%;
     }
@@ -96,13 +107,12 @@
     .core,
     .react,
     .input {
-        width: 785px;
-        position: absolute;
-        left: 50%;
+        padding-bottom: 90px;
+        position: relative;
     }
     
     .intro {
-        top: 23%;
+        margin-top: 150px;
     }
     
     .intro__title,
@@ -163,14 +173,6 @@
         color: gray;
     }
     
-    .core {
-        top: 65%;
-    }
-    
-    .react {
-        top: 130%;
-    }
-    
     .react__par {
         padding-bottom: 30px;
     }
@@ -185,8 +187,4 @@
     
     .react__par a:hover {
         color: gray;
-    }
-    
-    .input {
-        top: 280%;
     }

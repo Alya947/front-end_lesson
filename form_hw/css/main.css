@@ -1,0 +1,112 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .container {
+        margin: 0 auto;
+        max-width: 570px;
+        width: 100%;
+    }
+    
+    .form__name {
+        padding-bottom: 25px;
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        color: #1C1C1C;
+    }
+    
+    .account {
+        padding-right: 65px;
+        padding-bottom: 25px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .account__lay span,
+    .email span {
+        padding-bottom: 15px;
+        display: block;
+        padding-bottom: 15px;
+        display: block;
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: -0.2px;
+        color: #545454;
+    }
+    
+    .account__field {
+        width: 238px;
+        height: 38px;
+    }
+    
+    input {
+        border: 1px solid #E4E4E4;
+        border-radius: 6px;
+    }
+    
+    input:hover {
+        border: 1px solid blue;
+    }
+    
+    input:focus {
+        border: 2px solid darkblue;
+        outline: none;
+    }
+    
+    .email {}
+    
+    .email__field {
+        width: 500px;
+        height: 38px;
+        margin-bottom: 15px;
+    }
+    
+    .email__note {
+        padding-bottom: 25px;
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: -0.1px;
+        color: #969696;
+    }
+    
+    label[for="female"] {
+        margin-left: 20px;
+    }
+    
+    .email__radio {
+        display: inline;
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: -0.2px;
+        color: #545454;
+    }
+    
+    .selection {}
+    
+    .selection span {
+        display: block;
+    }
+    
+    .selection__field {
+        width: 245px;
+        height: 38px;
+    }
+    
+    .select [value="Select"] {
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: -0.2px;
+    }
