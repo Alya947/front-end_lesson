@@ -8,6 +8,7 @@
         margin: 0 auto;
         max-width: 570px;
         width: 100%;
+        overflow: hidden;
     }
     
     .form__name {
@@ -60,7 +61,9 @@
         outline: none;
     }
     
-    .email {}
+    .email {
+        padding-bottom: 25px;
+    }
     
     .email__field {
         width: 500px;
@@ -92,21 +95,126 @@
         color: #545454;
     }
     
-    .selection {}
+    .selection {
+        position: relative;
+        display: flex;
+        gap: 20px;
+        padding-bottom: 25px;
+    }
+    
+    .selection img {
+        position: absolute;
+        width: 11px;
+        height: 14px;
+        right: 60%;
+        top: 47%;
+    }
     
     .selection span {
+        padding-bottom: 15px;
         display: block;
-    }
-    
-    .selection__field {
-        width: 245px;
-        height: 38px;
-    }
-    
-    .select [value="Select"] {
-        font-family: 'Inter';
+        font-family: 'Roboto';
         font-weight: 400;
         font-size: 15px;
         line-height: 22px;
         letter-spacing: -0.2px;
+        color: #545454;
+    }
+    
+    .selection__field {
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: 0.2px;
+        color: #545454;
+        width: 245px;
+        height: 38px;
+        -webkit-appearance: none;
+        padding-left: 10px;
+        border: 1px solid #E4E4E4;
+        border-radius: 6px;
+    }
+    
+    .selection__field:hover {
+        border: 1px solid blue;
+    }
+    
+    .selection__field:focus {
+        border: 2px solid darkblue;
+        outline: none;
+    }
+    
+    .selection__city {
+        width: 245px;
+        height: 38px;
+    }
+    
+    .button button {
+        margin-bottom: 25px;
+        width: 510px;
+        height: 38px;
+        background: #007BFF;
+        border: 1px solid #E4E4E4;
+        border-radius: 6px;
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: -0.1px;
+        color: #FFFFFF;
+    }
+    
+    .info__more {
+        margin-bottom: 25px;
+        padding-right: 30px;
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 18px;
+        text-align: center;
+        letter-spacing: -0.1px;
+        color: #969696;
+    }
+    
+    .info__more span {
+        display: block;
+    }
+    
+    .info__more a,
+    .footer a {
+        text-decoration: none;
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: -0.1px;
+        color: #007BFF;
+    }
+    
+    .info__more a:hover {
+        color: lightskyblue;
+    }
+    
+    .footer {
+        display: flex;
+        border-top: 1px solid#E4E4E4;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .footer p {
+        padding-top: 25px;
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: -0.2px;
+        color: #545454;
+    }
+    
+    .footer a {
+        font-size: 15px;
+        padding-right: 15px;
     }
